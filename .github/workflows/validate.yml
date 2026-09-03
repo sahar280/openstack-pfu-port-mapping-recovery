@@ -1,0 +1,20 @@
+name: Validate preserved PFU helper
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  integrity-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify original and executable copies are identical
+        run: cmp --silent original/pfu_port_mapping_script.txt pfu_port_mapping_helper.sh
+      - name: Validate Bash syntax
+        run: bash -n pfu_port_mapping_helper.sh tests/mock-bin/openstack tests/smoke_test.sh
+      - name: Run synthetic smoke test
+        run: bash tests/smoke_test.sh
