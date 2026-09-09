@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
 
-ROOT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+ROOT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
 TEST_DIR=$(mktemp -d)
 trap 'rm -rf "$TEST_DIR"' EXIT
 
-cp "$ROOT_DIR/openstack" "$TEST_DIR/openstack"
+cp "$ROOT_DIR/tests/mock-bin/openstack" "$TEST_DIR/openstack"
 chmod +x "$TEST_DIR/openstack"
 
 PATH="$TEST_DIR:$PATH" bash "$ROOT_DIR/pfu_port_mapping_helper.sh" pfu-demo > "$TEST_DIR/output.txt"
