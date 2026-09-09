@@ -105,12 +105,19 @@ Usage: ./pfu_port_mapping_helper.sh <grep-pattern>
 ## Demonstration
 
 The smoke test places a synthetic `openstack` executable earlier in `PATH`, runs
-the unchanged script, and confirms that it produces the expected trunk,
-subport, VLAN, unset, and set lines. It makes no network calls and changes no
-resources.
+the unchanged script against two fictional trunks with eight subports each,
+and verifies all 16 subport records plus the generated `unset` and `set`
+commands. It makes no network calls and changes no resources.
 
 ```bash
 bash tests/smoke_test.sh
+```
+
+To display the complete synthetic scenario for a recorded demonstration:
+
+```bash
+export PATH="$PWD/tests/mock-bin:$PATH"
+./pfu_port_mapping_helper.sh pfu-demo
 ```
 
 ## Impact
