@@ -4,20 +4,227 @@ Processing TRUNK: pfu-demo-trunk-01 (11111111-1111-4111-8111-111111111111)
 
 ===== SUBPORT DETAILS =====
 ----------------------------------------
-Sub-port: 22222222-2222-4222-8222-222222222222  | VLAN: 101
+Sub-port: 21000000-0000-4000-8000-000000000001  | VLAN: 101
 ----------------------------------------
-| id     | 22222222-2222-4222-8222-222222222222 |
-| status | DOWN                                  |
+| id     | 21000000-0000-4000-8000-000000000001 |
+| status | DOWN                                |
 
 UNSET CMD:
-openstack network trunk unset --subport 22222222-2222-4222-8222-222222222222 pfu-demo-trunk-01
+openstack network trunk unset --subport 21000000-0000-4000-8000-000000000001 pfu-demo-trunk-01
 SET CMD:
-openstack network trunk set --subport port=22222222-2222-4222-8222-222222222222,segmentation-type=vlan,segmentation-id=101 pfu-demo-trunk-01
+openstack network trunk set --subport port=21000000-0000-4000-8000-000000000001,segmentation-type=vlan,segmentation-id=101 pfu-demo-trunk-01
+
+----------------------------------------
+Sub-port: 21000000-0000-4000-8000-000000000002  | VLAN: 102
+----------------------------------------
+| id     | 21000000-0000-4000-8000-000000000002 |
+| status | DOWN                                |
+
+UNSET CMD:
+openstack network trunk unset --subport 21000000-0000-4000-8000-000000000002 pfu-demo-trunk-01
+SET CMD:
+openstack network trunk set --subport port=21000000-0000-4000-8000-000000000002,segmentation-type=vlan,segmentation-id=102 pfu-demo-trunk-01
+
+----------------------------------------
+Sub-port: 21000000-0000-4000-8000-000000000003  | VLAN: 103
+----------------------------------------
+| id     | 21000000-0000-4000-8000-000000000003 |
+| status | DOWN                                |
+
+UNSET CMD:
+openstack network trunk unset --subport 21000000-0000-4000-8000-000000000003 pfu-demo-trunk-01
+SET CMD:
+openstack network trunk set --subport port=21000000-0000-4000-8000-000000000003,segmentation-type=vlan,segmentation-id=103 pfu-demo-trunk-01
+
+----------------------------------------
+Sub-port: 21000000-0000-4000-8000-000000000004  | VLAN: 104
+----------------------------------------
+| id     | 21000000-0000-4000-8000-000000000004 |
+| status | DOWN                                |
+
+UNSET CMD:
+openstack network trunk unset --subport 21000000-0000-4000-8000-000000000004 pfu-demo-trunk-01
+SET CMD:
+openstack network trunk set --subport port=21000000-0000-4000-8000-000000000004,segmentation-type=vlan,segmentation-id=104 pfu-demo-trunk-01
+
+----------------------------------------
+Sub-port: 21000000-0000-4000-8000-000000000005  | VLAN: 105
+----------------------------------------
+| id     | 21000000-0000-4000-8000-000000000005 |
+| status | DOWN                                |
+
+UNSET CMD:
+openstack network trunk unset --subport 21000000-0000-4000-8000-000000000005 pfu-demo-trunk-01
+SET CMD:
+openstack network trunk set --subport port=21000000-0000-4000-8000-000000000005,segmentation-type=vlan,segmentation-id=105 pfu-demo-trunk-01
+
+----------------------------------------
+Sub-port: 21000000-0000-4000-8000-000000000006  | VLAN: 106
+----------------------------------------
+| id     | 21000000-0000-4000-8000-000000000006 |
+| status | DOWN                                |
+
+UNSET CMD:
+openstack network trunk unset --subport 21000000-0000-4000-8000-000000000006 pfu-demo-trunk-01
+SET CMD:
+openstack network trunk set --subport port=21000000-0000-4000-8000-000000000006,segmentation-type=vlan,segmentation-id=106 pfu-demo-trunk-01
+
+----------------------------------------
+Sub-port: 21000000-0000-4000-8000-000000000007  | VLAN: 107
+----------------------------------------
+| id     | 21000000-0000-4000-8000-000000000007 |
+| status | DOWN                                |
+
+UNSET CMD:
+openstack network trunk unset --subport 21000000-0000-4000-8000-000000000007 pfu-demo-trunk-01
+SET CMD:
+openstack network trunk set --subport port=21000000-0000-4000-8000-000000000007,segmentation-type=vlan,segmentation-id=107 pfu-demo-trunk-01
+
+----------------------------------------
+Sub-port: 21000000-0000-4000-8000-000000000008  | VLAN: 108
+----------------------------------------
+| id     | 21000000-0000-4000-8000-000000000008 |
+| status | DOWN                                |
+
+UNSET CMD:
+openstack network trunk unset --subport 21000000-0000-4000-8000-000000000008 pfu-demo-trunk-01
+SET CMD:
+openstack network trunk set --subport port=21000000-0000-4000-8000-000000000008,segmentation-type=vlan,segmentation-id=108 pfu-demo-trunk-01
 
 ========== CLEAN COMMAND SUMMARY ==========
 --- UNSET COMMANDS ---
-openstack network trunk unset --subport 22222222-2222-4222-8222-222222222222 pfu-demo-trunk-01
+openstack network trunk unset --subport 21000000-0000-4000-8000-000000000001 pfu-demo-trunk-01
+openstack network trunk unset --subport 21000000-0000-4000-8000-000000000002 pfu-demo-trunk-01
+openstack network trunk unset --subport 21000000-0000-4000-8000-000000000003 pfu-demo-trunk-01
+openstack network trunk unset --subport 21000000-0000-4000-8000-000000000004 pfu-demo-trunk-01
+openstack network trunk unset --subport 21000000-0000-4000-8000-000000000005 pfu-demo-trunk-01
+openstack network trunk unset --subport 21000000-0000-4000-8000-000000000006 pfu-demo-trunk-01
+openstack network trunk unset --subport 21000000-0000-4000-8000-000000000007 pfu-demo-trunk-01
+openstack network trunk unset --subport 21000000-0000-4000-8000-000000000008 pfu-demo-trunk-01
 
 --- SET COMMANDS ---
-openstack network trunk set --subport port=22222222-2222-4222-8222-222222222222,segmentation-type=vlan,segmentation-id=101 pfu-demo-trunk-01
+openstack network trunk set --subport port=21000000-0000-4000-8000-000000000001,segmentation-type=vlan,segmentation-id=101 pfu-demo-trunk-01
+openstack network trunk set --subport port=21000000-0000-4000-8000-000000000002,segmentation-type=vlan,segmentation-id=102 pfu-demo-trunk-01
+openstack network trunk set --subport port=21000000-0000-4000-8000-000000000003,segmentation-type=vlan,segmentation-id=103 pfu-demo-trunk-01
+openstack network trunk set --subport port=21000000-0000-4000-8000-000000000004,segmentation-type=vlan,segmentation-id=104 pfu-demo-trunk-01
+openstack network trunk set --subport port=21000000-0000-4000-8000-000000000005,segmentation-type=vlan,segmentation-id=105 pfu-demo-trunk-01
+openstack network trunk set --subport port=21000000-0000-4000-8000-000000000006,segmentation-type=vlan,segmentation-id=106 pfu-demo-trunk-01
+openstack network trunk set --subport port=21000000-0000-4000-8000-000000000007,segmentation-type=vlan,segmentation-id=107 pfu-demo-trunk-01
+openstack network trunk set --subport port=21000000-0000-4000-8000-000000000008,segmentation-type=vlan,segmentation-id=108 pfu-demo-trunk-01
 ===========================================
+
+############################################
+Processing TRUNK: pfu-demo-trunk-02 (99999999-9999-4999-8999-999999999999)
+############################################
+
+===== SUBPORT DETAILS =====
+----------------------------------------
+Sub-port: 22000000-0000-4000-8000-000000000001  | VLAN: 201
+----------------------------------------
+| id     | 22000000-0000-4000-8000-000000000001 |
+| status | DOWN                                |
+
+UNSET CMD:
+openstack network trunk unset --subport 22000000-0000-4000-8000-000000000001 pfu-demo-trunk-02
+SET CMD:
+openstack network trunk set --subport port=22000000-0000-4000-8000-000000000001,segmentation-type=vlan,segmentation-id=201 pfu-demo-trunk-02
+
+----------------------------------------
+Sub-port: 22000000-0000-4000-8000-000000000002  | VLAN: 202
+----------------------------------------
+| id     | 22000000-0000-4000-8000-000000000002 |
+| status | DOWN                                |
+
+UNSET CMD:
+openstack network trunk unset --subport 22000000-0000-4000-8000-000000000002 pfu-demo-trunk-02
+SET CMD:
+openstack network trunk set --subport port=22000000-0000-4000-8000-000000000002,segmentation-type=vlan,segmentation-id=202 pfu-demo-trunk-02
+
+----------------------------------------
+Sub-port: 22000000-0000-4000-8000-000000000003  | VLAN: 203
+----------------------------------------
+| id     | 22000000-0000-4000-8000-000000000003 |
+| status | DOWN                                |
+
+UNSET CMD:
+openstack network trunk unset --subport 22000000-0000-4000-8000-000000000003 pfu-demo-trunk-02
+SET CMD:
+openstack network trunk set --subport port=22000000-0000-4000-8000-000000000003,segmentation-type=vlan,segmentation-id=203 pfu-demo-trunk-02
+
+----------------------------------------
+Sub-port: 22000000-0000-4000-8000-000000000004  | VLAN: 204
+----------------------------------------
+| id     | 22000000-0000-4000-8000-000000000004 |
+| status | DOWN                                |
+
+UNSET CMD:
+openstack network trunk unset --subport 22000000-0000-4000-8000-000000000004 pfu-demo-trunk-02
+SET CMD:
+openstack network trunk set --subport port=22000000-0000-4000-8000-000000000004,segmentation-type=vlan,segmentation-id=204 pfu-demo-trunk-02
+
+----------------------------------------
+Sub-port: 22000000-0000-4000-8000-000000000005  | VLAN: 205
+----------------------------------------
+| id     | 22000000-0000-4000-8000-000000000005 |
+| status | DOWN                                |
+
+UNSET CMD:
+openstack network trunk unset --subport 22000000-0000-4000-8000-000000000005 pfu-demo-trunk-02
+SET CMD:
+openstack network trunk set --subport port=22000000-0000-4000-8000-000000000005,segmentation-type=vlan,segmentation-id=205 pfu-demo-trunk-02
+
+----------------------------------------
+Sub-port: 22000000-0000-4000-8000-000000000006  | VLAN: 206
+----------------------------------------
+| id     | 22000000-0000-4000-8000-000000000006 |
+| status | DOWN                                |
+
+UNSET CMD:
+openstack network trunk unset --subport 22000000-0000-4000-8000-000000000006 pfu-demo-trunk-02
+SET CMD:
+openstack network trunk set --subport port=22000000-0000-4000-8000-000000000006,segmentation-type=vlan,segmentation-id=206 pfu-demo-trunk-02
+
+----------------------------------------
+Sub-port: 22000000-0000-4000-8000-000000000007  | VLAN: 207
+----------------------------------------
+| id     | 22000000-0000-4000-8000-000000000007 |
+| status | DOWN                                |
+
+UNSET CMD:
+openstack network trunk unset --subport 22000000-0000-4000-8000-000000000007 pfu-demo-trunk-02
+SET CMD:
+openstack network trunk set --subport port=22000000-0000-4000-8000-000000000007,segmentation-type=vlan,segmentation-id=207 pfu-demo-trunk-02
+
+----------------------------------------
+Sub-port: 22000000-0000-4000-8000-000000000008  | VLAN: 208
+----------------------------------------
+| id     | 22000000-0000-4000-8000-000000000008 |
+| status | DOWN                                |
+
+UNSET CMD:
+openstack network trunk unset --subport 22000000-0000-4000-8000-000000000008 pfu-demo-trunk-02
+SET CMD:
+openstack network trunk set --subport port=22000000-0000-4000-8000-000000000008,segmentation-type=vlan,segmentation-id=208 pfu-demo-trunk-02
+
+========== CLEAN COMMAND SUMMARY ==========
+--- UNSET COMMANDS ---
+openstack network trunk unset --subport 22000000-0000-4000-8000-000000000001 pfu-demo-trunk-02
+openstack network trunk unset --subport 22000000-0000-4000-8000-000000000002 pfu-demo-trunk-02
+openstack network trunk unset --subport 22000000-0000-4000-8000-000000000003 pfu-demo-trunk-02
+openstack network trunk unset --subport 22000000-0000-4000-8000-000000000004 pfu-demo-trunk-02
+openstack network trunk unset --subport 22000000-0000-4000-8000-000000000005 pfu-demo-trunk-02
+openstack network trunk unset --subport 22000000-0000-4000-8000-000000000006 pfu-demo-trunk-02
+openstack network trunk unset --subport 22000000-0000-4000-8000-000000000007 pfu-demo-trunk-02
+openstack network trunk unset --subport 22000000-0000-4000-8000-000000000008 pfu-demo-trunk-02
+
+--- SET COMMANDS ---
+openstack network trunk set --subport port=22000000-0000-4000-8000-000000000001,segmentation-type=vlan,segmentation-id=201 pfu-demo-trunk-02
+openstack network trunk set --subport port=22000000-0000-4000-8000-000000000002,segmentation-type=vlan,segmentation-id=202 pfu-demo-trunk-02
+openstack network trunk set --subport port=22000000-0000-4000-8000-000000000003,segmentation-type=vlan,segmentation-id=203 pfu-demo-trunk-02
+openstack network trunk set --subport port=22000000-0000-4000-8000-000000000004,segmentation-type=vlan,segmentation-id=204 pfu-demo-trunk-02
+openstack network trunk set --subport port=22000000-0000-4000-8000-000000000005,segmentation-type=vlan,segmentation-id=205 pfu-demo-trunk-02
+openstack network trunk set --subport port=22000000-0000-4000-8000-000000000006,segmentation-type=vlan,segmentation-id=206 pfu-demo-trunk-02
+openstack network trunk set --subport port=22000000-0000-4000-8000-000000000007,segmentation-type=vlan,segmentation-id=207 pfu-demo-trunk-02
+openstack network trunk set --subport port=22000000-0000-4000-8000-000000000008,segmentation-type=vlan,segmentation-id=208 pfu-demo-trunk-02
+===========================================
+
